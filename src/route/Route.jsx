@@ -5,6 +5,7 @@ import Blog from "../pages/blog/Blog";
 import Contact from "../pages/contact/Contact";
 import SignIn from "../pages/sign-in/SignIn";
 import SignUp from "../pages/sign-up/SignUp";
+import NotFound from "../pages/notfound/NotFound";
 
 // eslint-disable-next-line no-unused-vars
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
          {
             path: '/register',
             element: <SignUp></SignUp>
+         },
+         {
+            path:'*',
+            element: <NotFound></NotFound>
          }
       ]
    }

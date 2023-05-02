@@ -10,9 +10,6 @@ const Contact = () => {
                   <iframe
                      width="100%"
                      height="100%"
-                     frameBorder={0}
-                     marginHeight={0}
-                     marginWidth={0}
                      title="map"
                      scrolling="no"
                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14606.063068325055!2d90.34017348715821!3d23.76464130000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1507bf7f695%3A0xe131d1c1f26bdc56!2sMohammadpur%20Tajmahal%20Road!5e0!3m2!1sen!2sbd!4v1683052930282!5m2!1sen!2sbd"
