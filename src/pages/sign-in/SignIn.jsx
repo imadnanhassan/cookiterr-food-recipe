@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SignIn = () => {
    return (
-      <div className='py-28'>
+      <div className='py-20'>
          <div className="py-6">
             <div className="flex bg-white rounded-lg shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
                <div
@@ -28,6 +29,16 @@ const SignIn = () => {
                      <h1 className="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">
                         Sign in with Google
                      </h1>
+                     
+                  </a>
+                  <a href="#" className="flex items-center justify-center mt-4 rounded-lg shadow-md hover:bg-gray-100" >
+                     <div className="px-4 py-3">
+
+                     </div>
+                     <h1 className="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">
+                        Sign in with Github
+                     </h1>
+                     
                   </a>
                   <div className="mt-4 flex items-center justify-between">
                      <span className="border-b w-1/5 lg:w-1/4" />
@@ -66,9 +77,9 @@ const SignIn = () => {
                   </div>
                   <div className="mt-4 flex items-center justify-between">
                      <span className="border-b w-1/5 md:w-1/4" />
-                     <a href="#" className="text-xs text-gray-500 uppercase">
+                     <Link to={'/register'} className="text-xs text-gray-500 uppercase">
                         or sign up
-                     </a>
+                     </Link>
                      <span className="border-b w-1/5 md:w-1/4" />
                   </div>
                </div>
