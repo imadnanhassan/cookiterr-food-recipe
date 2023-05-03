@@ -6,6 +6,7 @@ import Contact from "../pages/contact/Contact";
 import SignIn from "../pages/sign-in/SignIn";
 import SignUp from "../pages/sign-up/SignUp";
 import NotFound from "../pages/notfound/NotFound";
+import ChefDEtails from "../pages/chefDetails/ChefDEtails";
 
 // eslint-disable-next-line no-unused-vars
 const router = createBrowserRouter([
@@ -32,6 +33,12 @@ const router = createBrowserRouter([
          {
             path: '/register',
             element: <SignUp></SignUp>
+         },
+         {
+            path: '/our-chef/:id',
+            element: <ChefDEtails></ChefDEtails>,
+            loader: ({params}) => fetch(`http://localhost:5000/our-chef/${params.id}`)
+            
          },
          {
             path:'*',

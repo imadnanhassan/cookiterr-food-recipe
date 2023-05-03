@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 // eslint-disable-next-line react/prop-types
 const ChefCard = ({ item }) => {
    // eslint-disable-next-line react/prop-types
-   const { name, experience, recipes, likes, picture, bio } = item
+   console.log(item)
+   const { name, experience, recipe_count, likes, picture, bio,id } = item
 
    return (
       <>
          <div className=" shadow-lg ">
             <div className="rounded overflow-hidden  flex flex-col">
-
                <div className="relative">
                   <a href="#">
                      <img
@@ -34,12 +34,12 @@ const ChefCard = ({ item }) => {
 
                </div>
                <div className="px-6 py-3 flex flex-row items-center justify-between bg-gray-100">
-                  <span className="py-1 text-lg font-regular text-gray-900 mr-1 flex flex-row items-center">Recipe: {recipes} 🍛</span>
+                  <span className="py-1 text-lg font-regular text-gray-900 mr-1 flex flex-row items-center">Recipe: {recipe_count} 🍛</span>
                   <span className="py-1 text-lg font-regular text-gray-900 mr-1 flex flex-row items-center" >Exprience: {experience} </span>
                </div>
                <div>
                   <button className="bg-green-700 text-white font-bold py-4 px-4 w-full rounded hover:bg-green-600">
-                     <Link to={`/recipe/${[]}`} >
+                     <Link to={`/our-chef/${id}`} >
                         View Recipe Details
                      </Link>
                   </button>
