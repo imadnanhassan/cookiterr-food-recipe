@@ -15,9 +15,6 @@ const Categories = () => {
                   <h2 className="text-3xl font-extrabold text-gray-900 font-Primary">Recipes By Category</h2>
                   <p className="mt-4 text-lg text-gray-500 font-Secondary">Excepteur sint occaecat cupidatat non qui proident, sunt culpa qui officia deserunmollit anim id est laborum.</p>
                </div>
-
-
-
                <div className="mt-8 mx-auto md:mx-auto max-w-md md:max-w-none grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10">
                   {card.map(item => (
                      <div key={item.id}

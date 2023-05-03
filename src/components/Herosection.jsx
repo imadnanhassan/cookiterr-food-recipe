@@ -7,8 +7,9 @@ const Herosection = () => {
             <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                   <div className="py-7 flex flex-col justify-center items-center">
-                     <h1 className="text-5xl text-white animate-fade-in-down">Welcome to my website!</h1>
-                     <p className="text-lg text-white animate-fade-in-up">Explore my portfolio and discover what I can do for you.</p>
+                     <h1 className="text-5xl text-white animate-fade-in-down font-Primary">GET FRESHLY COOKED</h1>
+                     <p className="text-lg text-white animate-fade-in-up font-Secondary">It is even better than
+                        an expensive cookery book. Learn how to make your favorite restaurant’s dishes</p>
                   </div>
 
 
