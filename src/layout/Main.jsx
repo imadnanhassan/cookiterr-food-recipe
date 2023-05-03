@@ -9,7 +9,6 @@ const Main = () => {
 
    const [loading, setLoading] = useState(true);
    useEffect(() => {
-      // Simulate a delay of 2 seconds to show the loader
       setTimeout(() => {
          setLoading(false);
       }, 2000);

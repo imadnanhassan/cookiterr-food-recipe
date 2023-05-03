@@ -17,10 +17,10 @@ const Newsletter = () => {
 
                      <main className="flex  w-full items-center justify-center bg-gray-100">
                       
-                        <button className="group relative h-12 w-48 overflow-hidden  bg-green-400 text-white text-lg shadow">
+                        <Link to={`https://www.facebook.com/iamadnanhassan`} className="group relative h-12 w-48 overflow-hidden  bg-green-400 text-white text-lg shadow">
                            <div className="absolute inset-0 w-3 bg-white text-green-700 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
                            <span className="relative text-whiteb uppercase text-lg font-semibold font-Secondary group-hover:text-green-500">subscirb!</span>
-                        </button>
+                        </Link>
                      </main>
                   </div>
                </div>

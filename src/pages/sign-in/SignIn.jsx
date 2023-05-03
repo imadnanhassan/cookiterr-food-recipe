@@ -1,6 +1,10 @@
+/* eslint-disable react/jsx-no-undef */
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FcGoogle } from 'react-icons/fc';
+import { FaGithub } from 'react-icons/fa';
+
 
 const SignIn = () => {
    return (
@@ -19,15 +23,13 @@ const SignIn = () => {
                      Food Hub
                   </h2>
                   <p className="text-xl text-gray-600 text-center">Welcome back!</p>
-                  <a
-                     href="#"
-                     className="flex items-center justify-center mt-4 rounded-lg shadow-md hover:bg-gray-100"
+                  <a href="#" className="flex items-center justify-center mt-4 rounded-lg shadow-md hover:bg-gray-100"
                   >
                      <div className="px-4 py-3">
 
                      </div>
                      <h1 className="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">
-                        Sign in with Google
+                     <FcGoogle className='text-lg inline mr-4'/> Sign in with Google
                      </h1>
                      
                   </a>
@@ -36,7 +38,7 @@ const SignIn = () => {
 
                      </div>
                      <h1 className="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">
-                        Sign in with Github
+                       <FaGithub className='text-lg inline mr-4'></FaGithub> Sign in with Github
                      </h1>
                      
                   </a>
