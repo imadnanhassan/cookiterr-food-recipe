@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/images/food hub logo.png'
+import { AuthContext } from '../provaider/AuthProvaider';
 
 const Header = () => {
    const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +10,9 @@ const Header = () => {
       setIsOpen(!isOpen);
    };
 
+
+
+   const {user} = useContext(AuthContext)
    return (
       <>
 
@@ -30,6 +34,7 @@ const Header = () => {
 
 
                   <div>
+                  <Link to={'/blog'} className="px-3 py-2 text-sm font-medium text-gray-500 hover:text-gray-900">{user.displayName}</Link>
                      <Link to={'/login'}
                         className="relative px-5 py-1 overflow-hidden font-Secondary font-medium text-gray-600 bg-gray-100 border border-gray-100  shadow-inner group"
                      >
