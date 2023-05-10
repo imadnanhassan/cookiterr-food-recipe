@@ -1,15 +1,19 @@
 /* eslint-disable react/jsx-no-undef */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
 
 // eslint-disable-next-line react/prop-types
 const ChefCard = ({ item }) => {
    // eslint-disable-next-line react/prop-types
-   console.log(item)
-   const { name, experience, recipe_count, likes, picture, bio,id } = item
+
+
+
+   const { name, experience, recipe_count, likes, picture, bio, id } = item
 
    return (
       <>
+
          <div className=" shadow-lg ">
             <div className="rounded overflow-hidden  flex flex-col">
                <div className="relative">
@@ -47,7 +51,6 @@ const ChefCard = ({ item }) => {
             </div>
 
          </div>
-
       </>
    );
 };

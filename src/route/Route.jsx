@@ -7,6 +7,7 @@ import SignIn from "../pages/sign-in/SignIn";
 import SignUp from "../pages/sign-up/SignUp";
 import NotFound from "../pages/notfound/NotFound";
 import ChefDEtails from "../pages/chefDetails/ChefDEtails";
+import PrivateRoute from "./PrivateRoute";
 
 // eslint-disable-next-line no-unused-vars
 const router = createBrowserRouter([
@@ -36,15 +37,16 @@ const router = createBrowserRouter([
          },
          {
             path: '/our-chef/:id',
-            element: <ChefDEtails></ChefDEtails>,
-            loader: ({params}) => fetch(`http://localhost:5000/our-chef/${params.id}`)
+            element: <PrivateRoute><ChefDEtails></ChefDEtails></PrivateRoute>,
+            loader: ({params}) => fetch(`https://cookiteer-server-dev-abulhassan.vercel.app/our-chef/${params.id}`)
             
          },
-         {
-            path:'*',
-            element: <NotFound></NotFound>
-         }
+         
       ]
+   },
+   {
+      path:'*',
+      element: <NotFound></NotFound>
    }
 ])
 

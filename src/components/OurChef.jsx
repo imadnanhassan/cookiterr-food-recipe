@@ -5,7 +5,7 @@ import ChefCard from './ChefCard';
 const OurChef = () => {
    const [chef, setChef] = useState([])
    useEffect(() => {
-      fetch('http://localhost:5000/our-chef')
+      fetch('https://cookiteer-server-dev-abulhassan.vercel.app/our-chef')
          .then(res => res.json())
          .then(data => setChef(data))
          .catch(error => console.error(error))
