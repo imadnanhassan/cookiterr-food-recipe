@@ -27,5 +27,5 @@ import cookiteer
 This project uses Tailwind CSS for styling. The framework provides Tailwind and Tailwind Components
 
 
-## Live Link [Click Me](https://vitejs.dev/guide/)
+## Live Link [Click Me]([https://vitejs.dev/guide/](https://cookiteer-food-recipe.web.app/))
 
